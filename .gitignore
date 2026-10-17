@@ -1,0 +1,28 @@
+# VASP potentials are licensed: never commit them
+POTCAR
+
+# VASP outputs
+CONTCAR
+OUTCAR
+OSZICAR
+vasprun.xml
+vaspout.h5
+WAVECAR
+CHGCAR
+CHG
+EIGENVAL
+EIGENVAL_OPT
+DOSCAR
+PROCAR
+PROCAR_OPT
+IBZKPT
+PCDAT
+XDATCAR
+REPORT
+vasp.log
+slurm-*.out
+
+# plots and Python
+MoS2_PBE_HSE06_bands.*
+__pycache__/
+.DS_Store

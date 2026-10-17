@@ -1,0 +1,15 @@
+SYSTEM = 2H-MoS2 PBE band structure
+
+PREC   = Accurate
+ENCUT  = 450
+EDIFF  = 1E-8
+LREAL  = .FALSE.
+
+ISMEAR = 0
+SIGMA  = 0.05
+
+NBANDS = 32           # 26 occupied (52 electrons) + 6 empty; keep the same in 3-hse06
+LORBIT = 11           # orbital-projected bands (PROCAR_OPT) and DOS
+
+LWAVE  = .TRUE.       # 3-hse06 starts from this WAVECAR
+LCHARG = .FALSE.

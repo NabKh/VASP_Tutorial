@@ -1,0 +1,23 @@
+SYSTEM = 2H-MoS2 HSE06 band structure
+
+PREC   = Accurate
+ENCUT  = 450
+EDIFF  = 1E-8
+LREAL  = .FALSE.
+
+ISMEAR = 0
+SIGMA  = 0.05
+
+NBANDS = 32
+LORBIT = 11
+
+# HSE06: 25% exact exchange, screened with mu = 0.2 1/Angstrom
+LHFCALC  = .TRUE.
+GGA      = PE
+HFSCREEN = 0.2
+HFRCUT   = -1         # truncated Coulomb kernel, smoother bands for gapped systems
+ALGO     = All        # direct minimisation, recommended for hybrids
+ISTART   = 1          # read WAVECAR from 2-pbe
+
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
