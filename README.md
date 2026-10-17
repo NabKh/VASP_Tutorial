@@ -111,3 +111,7 @@ Without `KPOINTS_OPT` (before 6.3.0):
 4. Relax with `IVDW = 11` (D3 zero damping) and compare *a*, *c* and the PBE gap with `IVDW = 12`.
 5. Relax without `IVDW` and watch what happens to *c*, then rerun step 2 on that cell.
 6. Plot the orbital character from `PROCAR_OPT` (pymatgen: `Vasprun(..., parse_projected_eigen=True)`). Which Mo d and S p orbitals form the band edges at Γ and K?
+
+## License
+
+MIT, see [LICENSE](LICENSE). The VASP PAW potentials are not covered and are not included.
